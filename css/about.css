@@ -1,0 +1,199 @@
+:root{
+    --white:#EEEEEE;
+    --teal:#47A992;
+    --brown:#482121;
+    --lightbrown:#7A3E3E;
+    --blue:#00303f;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    padding: .5em;
+    flex-wrap: wrap;
+    background-color: var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--brown);
+}
+
+#logo{
+    flex: 3;
+    font-size:2em;
+    color: var(--brown);
+    margin: .5em;
+    min-width: 300px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    margin: .5em;
+    padding: .5em;
+    align-items: center;
+    min-width: 265px;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: var(--teal);
+}
+
+header a i{
+    margin-right: .2em;
+}
+
+#heading{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    color:var(--brown);
+    margin-top: 0;
+    height: 70vh;
+}
+
+.about{
+    display: flex;
+    gap: 2em;
+    flex-wrap: nowrap;
+}
+
+.about i{
+    display: flex;
+    justify-content: center;
+    color:rgb(102, 150, 5);
+    font-weight: bolder;
+}
+
+.about .text{
+    margin-top: 2em;
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+.about p{
+    opacity: .9;
+    margin: 1em;
+}
+
+.about img{
+    margin: auto;
+    width: 15%;
+    height: 55%;
+    flex-shrink: 7;
+}
+
+.about a{
+    text-decoration: none;
+    background-color: azure;
+    padding: .6em;  
+    border-radius: 5%;
+    color: var(--blue);
+    display: block;
+    text-align: center;
+}
+
+.about a:hover{
+    background-color: var(--teal);
+}
+
+.visit{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.abouthill{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abouthill h1{
+    margin: 1em auto;
+    color:rgb(102, 150, 5);
+    font-size: 2em;
+    font-weight: bolder;
+    
+}
+
+.abouthill p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    opacity: .8;
+    margin: 0px 3em;
+    word-spacing: .3em;
+    line-height: 1.3em;
+}
+
+.abouthill a{
+    text-decoration: none;
+    background-color: azure;
+    padding: .6em;  
+    border-radius: 5%;
+    color: var(--blue);
+    border: 1px solid var(--teal);
+    margin: 1em auto;
+}
+
+.abouthill a:hover{
+    background-color: var(--teal);
+}
+
+footer{
+    background-color: var(--white);
+    padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.social{
+    padding: .6em;
+}
+
+footer a{
+    text-decoration: none;
+    margin-top: -.5em;
+    color: var(--lightbrown);
+}
+
+.social a{
+    font-size: 1.4em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: .5em;
+    color: var(--blue);
+}
+
+.social a :hover{
+    transform: translate(0,-50%); 
+    transition: 1s;
+}
+
+@media (max-width:1000px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about img{
+        margin: 1em;
+        width: 30vw;
+    }
+    .about .text{
+        margin: 0;
+        padding: 0;
+    }
+}
